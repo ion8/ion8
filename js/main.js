@@ -267,7 +267,6 @@ else if (window.attachEvent) window.attachEvent("onload", initBlocksHeight);
 
 
 
-
 // jQuery smooth scroll https://github.com/kswedberg/jquery-smooth-scroll
 
 (function($) {
@@ -483,10 +482,14 @@ function escapeSelector (str) {
 
 
 
-// smooth scroll config
+// custom
 
 $(document).ready(function() {
 
-  $('a').smoothScroll({offset:-40});
+  // smooth scroll config
+  $('a').smoothScroll({offset:-250});
+  
+  // floating header
+  $('#header').portamento({gap:0});
 
 });
