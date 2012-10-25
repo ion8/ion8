@@ -70,6 +70,7 @@ input[type=button]:hover {cursor:pointer;}
 	float:left;
 	background:url(../images/bg-nav.png);
 	padding:12px 27px 5px 22px;
+	text-align: left;
 }
 #nav ul {
 	font:25px/29px Helvetica, Arial, sans-serif;
@@ -96,6 +97,7 @@ input[type=button]:hover {cursor:pointer;}
 	float:left;
 	background:url(../images/bg-sub-nav.png);
 	padding:25px 19px 5px;
+	text-align: left;
 }
 .sub-nav ul {
 	font:17px/19px Helvetica, Arial, sans-serif;
