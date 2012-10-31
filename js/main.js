@@ -487,7 +487,23 @@ function escapeSelector (str) {
 $(document).ready(function() {
 
   // smooth scroll config
-  $('a').smoothScroll({offset:-250});
+  //$('a').smoothScroll({offset:-250});
+  
+  $('a[href*="#"]').live('click', function() {
+    if ( this.hash ) {
+      $.bbq.pushState( '#/' + this.hash.slice(1) );
+      return false;
+    }
+  });
+
+  $(window).bind('hashchange', function(event) {
+    var tgt = location.hash.replace(/^#\/?/,'');
+    if ( document.getElementById(tgt) ) {
+      $.smoothScroll({scrollTarget: '#' + tgt, offset: -250});
+    }
+  });
+
+  $(window).trigger('hashchange');
   
   // floating header
   $('#header').portamento({gap:0});
