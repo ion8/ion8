@@ -522,13 +522,23 @@ $(document).ready(function() {
   $('#george-easton-nav').click(function() {
       $('#eryn-corbeil').hide();
       $('#george-easton').show();
-      $('#eryn-corbeil-pic').css('margin-top', '-204px');
+      // mozilla/IE
+        $('#eryn-corbeil-pic').css('margin-top', '-229px');
+      // webkit
+      if ($.browser.webkit) {
+          $('#eryn-corbeil-pic').css('margin-top', '-204px');
+      }
   });
 
   $('#george-easton-pic').click(function() {
       $('#eryn-corbeil').hide();
       $('#george-easton').show();
-      $('#eryn-corbeil-pic').css('margin-top', '-204px');
+      // mozilla/IE
+        $('#eryn-corbeil-pic').css('margin-top', '-229px');
+      // webkit
+      if ($.browser.webkit) {
+          $('#eryn-corbeil-pic').css('margin-top', '-204px');
+      }
   });
 
   $('#eryn-corbeil-nav').click(function() {
