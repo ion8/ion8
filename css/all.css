@@ -490,9 +490,12 @@ input[type=button]:hover {cursor:pointer;}
 	background:url(../images/separator-2.gif) no-repeat 0 4px;
 }
 .footer-list li:first-child {background:none;}
+
 /* Tablet */
 @media only screen and (max-width:900px){
-	#header{padding:14px 0 22px 13px;}
+	#header{padding:14px 0 22px 13px;
+	    margin-left: -124px;
+	}
 	.menu-filter{
 		width:62.5%;
 		padding-right:0;
@@ -560,10 +563,15 @@ input[type=button]:hover {cursor:pointer;}
 		bottom:250px;
 		left:2.5%;
 	}
+	#eryn-corbeil, #george-easton {
+	    width: 220px !important;
+	}
 }
 /* Mobile */
 @media only screen and (max-width:767px){
-	#header{padding:0 0 0 8px;}
+	#header{padding:0 0 0 8px;
+	    margin-left: -64px;
+	}
 	.logo{
 		width:102px;
 		height:77px;

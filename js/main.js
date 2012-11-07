@@ -480,37 +480,6 @@ function escapeSelector (str) {
 
 })(jQuery);
 
-
-// detect OS
-/*
-var os = (function() {
-    var ua = navigator.userAgent.toLowerCase();
-    return {
-        isWin2K: /windows nt 5.0/.test(ua),
-        isXP: /windows nt 5.1/.test(ua),
-        isVista: /windows nt 6.0/.test(ua),
-        isWin7: /windows nt 6.1/.test(ua)
-    };
-}());
-
-if(os.isWin7) {
-    alert("You're using Windows 7");
-}
-
-if(os.isVista) {
-    alert("You're using Windows Vista");
-}
-
-if(os.isXP) {
-    alert("You're using Windows XP");
-}
-
-if(os.isWin2K) {
-    alert("You're using Windows 2000");
-}
-​*/
-
-
 // custom
 
 var ua = navigator.userAgent.toLowerCase();
@@ -540,6 +509,9 @@ $(document).ready(function() {
   $('.sub-nav').hide();
   $('#about-us-nav').mouseenter(function() {
       $('.sub-nav').show();
+  });
+  $('#nav a').click(function() {
+      $('.sub-nav').hide();
   });
   $('.sub-nav').mouseleave(function() {
       $('.sub-nav').hide();
