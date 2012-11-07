@@ -487,7 +487,6 @@ function escapeSelector (str) {
 $(document).ready(function() {
 
   // smooth scroll config
-  //$('a').smoothScroll({offset:-250});
   
   $('a[href*="#"]').live('click', function() {
     if ( this.hash ) {
@@ -505,7 +504,48 @@ $(document).ready(function() {
 
   $(window).trigger('hashchange');
   
+  // menu behaviour
+  
+  $('.sub-nav').hide();
+  $('#about-us-nav').mouseenter(function() {
+      $('.sub-nav').show();
+  });
+  $('.sub-nav').mouseleave(function() {
+      $('.sub-nav').hide();
+  });
+
+  // bio behaviour
+  
+  $('#george-easton').hide();
+  $('#eryn-corbeil').hide();
+  
+  $('#george-easton-nav').click(function() {
+      $('#eryn-corbeil').hide();
+      $('#george-easton').show();
+      $('#eryn-corbeil-pic').css('margin-top', '-204px');
+  });
+
+  $('#george-easton-pic').click(function() {
+      $('#eryn-corbeil').hide();
+      $('#george-easton').show();
+      $('#eryn-corbeil-pic').css('margin-top', '-204px');
+  });
+
+  $('#eryn-corbeil-nav').click(function() {
+      $('#george-easton').hide();
+      $('#eryn-corbeil').show();
+      $('#eryn-corbeil-pic').css('margin-top', '20px');
+  });
+  
+  $('#eryn-corbeil-pic').click(function() {
+      $('#george-easton').hide();
+      $('#eryn-corbeil').show();
+      $('#eryn-corbeil-pic').css('margin-top', '20px');
+  });
+
+  
   // floating header
+  
   $('#header').portamento({gap:0});
 
 });

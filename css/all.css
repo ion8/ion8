@@ -46,8 +46,8 @@ input[type=button]:hover {cursor:pointer;}
 /* header */
 #header {
 	padding:14px 0 40px;
-	margin:0 auto;
-	width:980px;
+	margin-left: -200px;
+	width: 600px;
 	overflow:hidden;
 	z-index:999;
 }
@@ -71,6 +71,7 @@ input[type=button]:hover {cursor:pointer;}
 	background:url(../images/bg-nav.png);
 	padding:12px 27px 5px 22px;
 	text-align: left;
+	display: block;
 }
 #nav ul {
 	font:25px/29px Helvetica, Arial, sans-serif;
