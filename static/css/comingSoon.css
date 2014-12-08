@@ -1,0 +1,97 @@
+/* 
+
+	Project: ion8 - Coming Soon
+
+	Developed By: Christopher Mundle
+	
+	Date: September 24th, 2014
+	
+	Version: 1.0
+	
+	Made with love by Little Rocket.
+
+*/
+
+/* Extra small devices (phones, less than 768px) */
+
+/* Global */
+body {
+	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.004);
+    -moz-osx-font-smoothing: grayscale;
+}
+
+img {
+  -webkit-backface-visibility: visible;
+  -moz-backface-visibility: visible;
+  -ms-backface-visibility: visible;
+  backface-visibility: visible; 
+}
+
+.btn {
+	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.004);
+    -moz-osx-font-smoothing: grayscale;
+    font-size: 1.25em;
+}
+
+/* Header */
+.navbar-header {
+	float: none;
+}
+#headerLogo {
+	height: 38px;
+}
+
+/* Footer */
+
+.brand img {
+	width: 150px;
+}
+
+#social {
+	margin-top: 1em;
+}
+
+.bg-wet-asphalt {
+	background-color: #0A1E26;
+}
+
+a:hover, a:focus {
+	color: #5B7692;
+}
+
+/* Fix for Form on Phablets */
+@media (min-width: 481px) and (max-width: 767px) {
+	
+	.header-6-sub .signup-form form .form-control, 
+	.header-6-sub .signup-form form button {
+		width: 100%;
+		margin: 10px 0 0;
+		display: block;
+		float: none;
+	}
+	
+}
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+
+	.header-6-sub .signup-form form .form-control, 
+	.header-6-sub .signup-form form button {
+		width: 23.5%;
+	}
+
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+	
+}
