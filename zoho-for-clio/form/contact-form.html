@@ -1,0 +1,61 @@
+<div id='crmWebToEntityForm'>
+   <META HTTP-EQUIV ='content-type' CONTENT='text/html;charset=UTF-8'>
+   <form class="contact-form" action='https://crm.zoho.com/crm/WebToLeadForm' name=WebToLeads1500925000000132001 method='POST' onSubmit='javascript:document.charset="UTF-8"; return checkMandatory()' accept-charset='UTF-8'>
+
+	 <!-- Do not remove this code. -->
+	<input type='text' style='display:none;' name='xnQsjsdp' value='4940bf98aa81d0c7f22e5aad1670f9a4fd8ab83f0dbe931291917dc3c60b74e5'/>
+	<input type='hidden' name='zc_gad' id='zc_gad' value=''/>
+	<input type='text' style='display:none;' name='xmIwtLD' value='1dbaad62a375a986de45d52d2d68a7ddbb4f474605c5b0e78d44746253889ba8'/>
+	<input type='text' style='display:none;'  name='actionType' value='TGVhZHM='/>
+
+	<input type='text' style='display:none;' name='returnURL' value='http&#x3a;&#x2f;&#x2f;ion8.net&#x2f;zoho-for-clio' /> 
+	 <!-- Do not remove this code. -->
+
+	Last Name<span style='color:red;'>*</span><br><input type='text'  maxlength='80' name='Last Name' />
+
+Email<span style='color:red;'>*</span><br><input type='text' maxlength='100' name='Email' />
+
+Message<br><textarea name='Description' maxlength='1000'>&nbsp;</textarea>
+
+		<input style='font-size:12px;color:#131307' type='submit' value='Submit' />
+		<input type='reset' style='font-size:12px;color:#131307' value='Reset' />
+	    </td>
+
+	<script>
+ 	  var mndFileds=new Array('Last Name','Email');
+ 	  var fldLangVal=new Array('Last Name','Email');
+		var name='';
+		var email='';
+
+ 	  function checkMandatory() {
+		for(i=0;i<mndFileds.length;i++) {
+		  var fieldObj=document.forms['WebToLeads1500925000000132001'][mndFileds[i]];
+		  if(fieldObj) {
+			if (((fieldObj.value).replace(/^\s+|\s+$/g, '')).length==0) {
+			  alert(fldLangVal[i] +' cannot be empty'); 
+   	   	  	  fieldObj.focus();
+   	   	  	  return false;
+			}  else if(fieldObj.nodeName=='SELECT') {
+  	   	   	 if(fieldObj.options[fieldObj.selectedIndex].value=='-None-') {
+				alert(fldLangVal[i] +' cannot be none'); 
+				fieldObj.focus();
+				return false;
+			   }
+			} else if(fieldObj.type =='checkbox'){
+ 	 	 	 if(fieldObj.checked == false){
+				alert('Please accept  '+fldLangVal[i]);
+				fieldObj.focus();
+				return false;
+			   } 
+			 } 
+			 try {
+			     if(fieldObj.name == 'Last Name') {
+				name = fieldObj.value;
+ 	 	 	    }
+			} catch (e) {}
+		    }
+		}
+	     }
+	   </script>
+	</form>
+</div>
